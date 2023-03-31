@@ -1,0 +1,19 @@
+/* Write your CSS here */
+.todo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+}
+.imge {
+  height: 50px;
+  width: 50px;
+}
+
+.btnn {
+  color: palevioletred;
+  background-color: antiquewhite;
+  padding: 5px;
+  border-radius: 5px;
+}
