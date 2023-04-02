@@ -1,18 +1,18 @@
 import './index.css'
 
 const TodoItem = props => {
-  const {tododetails, deleteuser} = props
-  const {title, id} = tododetails
-  onDelete = () => {
-    deleteuser(id)
+  const {todoDetails, onDeleteUser} = props
+  const {title, id} = todoDetails
+  const onDelete = id => {
+    onDeleteUser(id)
   }
   return (
-    <div className="todo">
+    <li className="todo">
       <p>{title}</p>
       <button className="btnn" type="button" onClick={onDelete}>
         Delete
       </button>
-    </div>
+    </li>
   )
 }
 
